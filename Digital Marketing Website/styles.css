@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(251, 255, 254);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Main Container */
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    text-align: center;
+}
+
+.btn {
+    background-color: #f39c12;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
+}
+
+/* Services Page */
+.services-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1px;
+}
+
+.services-btn-container {
+    display: flex; /* Fixing the display */
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Correct value */
+    font-size: 18px; /* Adjust the text size */
+    padding: 170px; /* Increase padding around the container */
+    width: 50%; /* Ensure the container takes the full width */
+}
+
+
+.service-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    margin: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.service-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+/* Service Details */
+.service-details {
+    display: none;
+    margin-top: 50px;
+    background-color: rgba(12, 121, 230, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 350px;
+    text-align: center;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
